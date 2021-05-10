@@ -80,11 +80,12 @@ const Signup = props => {
 
   const onSignup = () => {
     let error = false;
-    if (email) {
-      setEmailError(false);
-    } else {
+    if (email===''||email===undefined) {
       setEmailError(true);
       error = true;
+    } else {
+      setEmailError(false);
+      
     }
     if (password) {
       setPasswordError(false);
@@ -92,7 +93,7 @@ const Signup = props => {
       setPasswordError(true);
       error = true;
     }
-    if (confirmPassword) {
+    if (confirmPassword && confirmPassword===password ) {
       setConfirmPasswordError(false);
     } else {
       setConfirmPasswordError(true);
@@ -191,7 +192,7 @@ const Signup = props => {
                       helperText={
                         passwordError && (
                           <div className={customStyles.error}>
-                            Please enter password
+                            Please enter valid password
                           </div>
                         )
                       }
@@ -208,7 +209,7 @@ const Signup = props => {
                       helperText={
                         confirmPasswordError && (
                           <div className={customStyles.error}>
-                            Please enter confirm password
+                            Please enter valid confirm password
                           </div>
                         )
                       }
