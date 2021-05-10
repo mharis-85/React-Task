@@ -1,0 +1,25 @@
+So this is the project directory.
+
+Src contains all project files
+
+assetes folder contains css design sheets images icons and jss files used to design
+
+components folder contains all the custom components used in the app
+
+layout contains app layout, its a single page application and contains only 2 to 3 screens soo is have only one layout name App
+
+services folder contains redux configuration and reducers and actions
+
+common contains common functions used in App like formatting date and history file is used to maintain history of browser
+
+finally views folder contains all the three screens as you can see on left side
+
+index.js is the entry point if application
+
+as you can see i have used history provider and stateprovider in the main entry file so the redux is available in all the app and work accordingly.
+
+routes.js contains all the routes for the 3 pages we have made.
+
+Thats it.
+
+Thank You.
