@@ -19,7 +19,8 @@ USER_LOGIN_FAIL : "USER_LOGIN_FAIL",
 
 
 
-
+/*======Below is the implementation Logic for Api calls from server using middlewares==== */
+/*======As serever wasn't responding, so these functions are for implementation logic as discussed==== */ 
 
 const device = "device";
 const location = "location";
@@ -72,7 +73,7 @@ export const login = (email, password, IP) => async (dispatch) => {
 };
 
 
-
+                                    /*============================ */
 
 export const signup = payload => {
   return async dispatch => {
